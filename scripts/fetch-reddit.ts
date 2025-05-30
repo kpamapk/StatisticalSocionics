@@ -17,9 +17,9 @@ function downloadImage(url: string, filename: string): Promise<void> {
     https.get(url, response => {
       if (response.statusCode === 200) {
         response.pipe(file);
-       file.on("finish", () => {
-       file.close(() => resolve());
-      });
+        file.on("finish", () => {
+          file.close(() => resolve());
+        });
       } else {
         file.close();
         fs.unlinkSync(filename); // Delete failed file
@@ -45,16 +45,17 @@ async function fetchAllPosts() {
       if (!imgUrl || !/\.(jpg|jpeg|png|gif|webp)$/i.test(imgUrl)) continue;
 
       const ext = path.extname(imgUrl).split("?")[0];
-      const slug = `post-${count}${ext}`;
-      const localPath = `/reddit-images/${slug}`;
-      const fullPath = path.join(imageDir, slug);
+      const slug = `post-${count}`;
+      const filename = `${slug}${ext}`;
+      const localPath = `/reddit-images/${filename}`;
+      const fullPath = path.join(imageDir, filename);
 
       try {
         await downloadImage(imgUrl, fullPath);
         allPosts.push({
           title: p.data.title,
           image: localPath,
-          url: `https://reddit.com${p.data.permalink}`,
+          slug: slug, // local slug for routing
         });
         count++;
       } catch (err) {
