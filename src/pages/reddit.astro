@@ -1,27 +1,19 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-
-// Fetch posts on the server at build/request time
-const res = await fetch("https://www.reddit.com/r/TalanovQuestionnaires/new.json?limit=5");
-const data = await res.json();
-const posts = data?.data?.children ?? [];
+import redditPosts from "@/data/reddit.json";
 ---
 
 <Layout>
-  <h1 class="text-2xl font-bold mb-4">Latest Posts from r/TalanovQuestionnaires</h1>
+  <main class="px-4 max-w-3xl mx-auto py-10">
+    <h1 class="text-3xl font-bold mb-6">Latest Posts from r/TalanovQuestionnaires</h1>
 
-  {posts.length === 0 ? (
-    <p class="text-red-500">No posts found or failed to fetch.</p>
-  ) : (
-    <div class="space-y-4 text-sm text-foreground">
-      {posts.map(post => (
-        <div class="p-4 border border-muted rounded-md bg-background shadow-sm">
-          <a href={`https://reddit.com${post.data.permalink}`} target="_blank" class="text-accent font-medium underline">
-            {post.data.title}
-          </a>
-          <p class="text-xs mt-1">by u/{post.data.author} • {new Date(post.data.created_utc * 1000).toLocaleString()}</p>
-        </div>
+    <div class="grid gap-6 sm:grid-cols-2">
+      {redditPosts.map(post => (
+        <a href={post.url} target="_blank" rel="noopener" class="block border rounded-md overflow-hidden hover:shadow-lg transition">
+          <img src={post.image} alt={post.title} class="w-full object-cover max-h-64" loading="lazy" />
+          <div class="p-3 text-sm font-medium">{post.title}</div>
+        </a>
       ))}
     </div>
-  )}
+  </main>
 </Layout>
