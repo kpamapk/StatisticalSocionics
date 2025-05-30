@@ -2,17 +2,15 @@
 import Layout from "@/layouts/Layout.astro";
 import redditPosts from "@/data/reddit.json";
 
-// Generate static paths for each post
+// Generate static paths
 export async function getStaticPaths() {
   return redditPosts.map((post) => {
     const slug = post.image.split("/").pop()?.replace(/\.(jpg|jpeg|png|webp|gif)/, "");
-    return {
-      params: { slug },
-    };
+    return { params: { slug } };
   });
 }
 
-// Extract slug and find matching post
+// Get post by slug
 const { slug } = Astro.params;
 const post = redditPosts.find(p => slug && p.image.includes(slug));
 
@@ -25,5 +23,6 @@ if (!post) {
   <main class="max-w-3xl mx-auto px-4 py-10">
     <img src={post.image} alt={post.title} class="w-full max-h-96 object-contain mb-6" />
     <h1 class="text-2xl font-bold mb-4">{post.title}</h1>
+    {post.body && <p class="text-base leading-relaxed whitespace-pre-line">{post.body}</p>}
   </main>
 </Layout>
