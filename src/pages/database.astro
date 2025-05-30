@@ -38,7 +38,7 @@ const posts = redditPosts;
 <script>
   document.addEventListener("astro:page-load", () => {
     const input = document.getElementById("search");
-    if (!input) return;
+    if (!(input instanceof HTMLInputElement)) return;
 
     input.addEventListener("input", () => {
       const query = input.value.toLowerCase();
