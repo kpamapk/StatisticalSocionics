@@ -1,4 +1,22 @@
 ---
+import redditPosts from "@/data/reddit.json";
+
+export async function getStaticPaths() {
+  return redditPosts.map((post) => {
+    const slug = post.image.split("/").pop()?.replace(/\.(jpg|jpeg|png|webp|gif)/, "");
+    return {
+      params: { slug },
+    };
+  });
+}
+
+const { slug } = Astro.params;
+const post = redditPosts.find((p) =>
+  p.image.includes(slug)
+);
+---
+
+---
 import Layout from "@/layouts/Layout.astro";
 import redditPosts from "@/data/reddit.json";
 
