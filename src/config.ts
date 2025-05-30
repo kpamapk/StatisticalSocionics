@@ -1,10 +1,10 @@
-export const SITE = {Statistical Socionics}
-  website: "https://astro-paper.pages.dev/", // replace this with your deployed domain
-  author: "Sat Naing",
-  profile: "https://satnaing.dev/",
-  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
-  title: "AstroPaper",
-  ogImage: "astropaper-og.jpg",
+export const SITE = {
+  website: "https://statisticalsocionics.vercel.app/", // replace this with your deployed domain
+  author: "Mapk",
+  profile: "",
+  desc: "Modern statisitical methodology applied to Socionics",
+  title: "Statistical Socionics",
+  ogImage: "",
   lightAndDarkMode: true,
   postPerIndex: 4,
   postPerPage: 4,
@@ -14,7 +14,7 @@ export const SITE = {Statistical Socionics}
   editPost: {
     enabled: true,
     text: "Suggest Changes",
-    url: "https://github.com/satnaing/astro-paper/edit/main/",
+    url: "https://github.com/kpamapk/StatisticalSocionics/edit/main/",
   },
   dynamicOgImage: true,
   lang: "en", // html lang code. Set this empty and default will be "en"
