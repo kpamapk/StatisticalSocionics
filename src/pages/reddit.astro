@@ -9,10 +9,10 @@ import redditPosts from "@/data/reddit.json";
 
     <div class="grid gap-6 sm:grid-cols-2">
       {redditPosts.map(post => (
-        <a href={post.url} target="_blank" rel="noopener" class="block border rounded-md overflow-hidden hover:shadow-lg transition">
+        <div class="block border rounded-md overflow-hidden hover:shadow-lg transition">
           <img src={post.image} alt={post.title} class="w-full object-cover max-h-64" loading="lazy" />
           <div class="p-3 text-sm font-medium">{post.title}</div>
-        </a>
+        </div>
       ))}
     </div>
   </main>
