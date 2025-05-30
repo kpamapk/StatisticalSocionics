@@ -16,23 +16,28 @@ const posts = redditPosts;
       class="w-full px-4 py-2 mb-6 border border-gray-300 rounded"
     />
 
-    <!-- 🔁 Filtered Posts will appear here -->
+    <!-- 🖼️ Post Grid -->
     <div id="results" class="grid gap-6 sm:grid-cols-2">
-      {posts.map(post => (
-        <div class="block border rounded-md overflow-hidden hover:shadow-lg transition">
-          <img src={post.image} alt={post.title} class="w-full object-cover max-h-64" loading="lazy" />
-          <div class="p-3 text-sm font-medium">{post.title}</div>
-        </div>
-
-      ))}
+      {posts.map(post => {
+        const slug = post.image.split("/").pop().replace(/\.(jpg|jpeg|png|webp|gif)/, "");
+        return (
+          <a
+            href={`/database/${slug}`}
+            class="post-card block border rounded-md overflow-hidden hover:shadow-lg transition"
+          >
+            <img src={post.image} alt={post.title} class="w-full object-cover max-h-64" loading="lazy" />
+            <div class="p-3 text-sm font-medium">{post.title}</div>
+          </a>
+        );
+      })}
     </div>
   </main>
 </Layout>
 
-<!-- 🧠 Client-side JS -->
+<!-- 🔍 Search Script -->
 <script>
   document.addEventListener("astro:page-load", () => {
-    const input = document.getElementById("search") as HTMLInputElement | null;
+    const input = document.getElementById("search");
     if (!input) return;
 
     input.addEventListener("input", () => {
@@ -40,11 +45,10 @@ const posts = redditPosts;
       const cards = document.querySelectorAll(".post-card");
 
       cards.forEach(card => {
-        const el = card as HTMLElement;
+        const el = card;
         const title = el.textContent?.toLowerCase() ?? "";
         el.style.display = title.includes(query) ? "block" : "none";
       });
     });
   });
 </script>
-
