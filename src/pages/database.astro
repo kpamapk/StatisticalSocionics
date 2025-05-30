@@ -31,16 +31,19 @@ const posts = redditPosts;
 <!-- 🧠 Client-side JS -->
 <script>
   document.addEventListener("astro:page-load", () => {
-    const input = document.getElementById("search");
-    const cards = document.querySelectorAll(".post-card");
+    const input = document.getElementById("search") as HTMLInputElement | null;
+    if (!input) return;
 
     input.addEventListener("input", () => {
       const query = input.value.toLowerCase();
+      const cards = document.querySelectorAll(".post-card");
 
       cards.forEach(card => {
-        const title = card.textContent.toLowerCase();
-        card.style.display = title.includes(query) ? "block" : "none";
+        const el = card as HTMLElement;
+        const title = el.textContent?.toLowerCase() ?? "";
+        el.style.display = title.includes(query) ? "block" : "none";
       });
     });
   });
 </script>
+
