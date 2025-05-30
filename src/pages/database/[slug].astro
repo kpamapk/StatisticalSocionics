@@ -2,17 +2,16 @@
 import Layout from "@/layouts/Layout.astro";
 import redditPosts from "@/data/reddit.json";
 
-// Generate static paths
-export async function getStaticPaths() {
-  return redditPosts.map((post) => {
-    const slug = post.image.split("/").pop()?.replace(/\.(jpg|jpeg|png|webp|gif)/, "");
-    return { params: { slug } };
-  });
-}
+// Extend post type to include optional body
+type Post = {
+  title: string;
+  image: string;
+  url: string;
+  body?: string;
+};
 
-// Get post by slug
 const { slug } = Astro.params;
-const post = redditPosts.find(p => slug && p.image.includes(slug));
+const post = redditPosts.find(p => slug && p.image.includes(slug)) as Post;
 
 if (!post) {
   throw new Error(`Post not found for slug: ${slug}`);
