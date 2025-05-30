@@ -1,4 +1,4 @@
-export const SITE = {
+export const SITE = {Statistical Socionics}
   website: "https://astro-paper.pages.dev/", // replace this with your deployed domain
   author: "Sat Naing",
   profile: "https://satnaing.dev/",
