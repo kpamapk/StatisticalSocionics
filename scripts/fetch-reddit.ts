@@ -17,7 +17,9 @@ function downloadImage(url: string, filename: string): Promise<void> {
     https.get(url, response => {
       if (response.statusCode === 200) {
         response.pipe(file);
-        file.on("finish", () => file.close(resolve));
+       file.on("finish", () => {
+       file.close(() => resolve());
+      });
       } else {
         file.close();
         fs.unlinkSync(filename); // Delete failed file
