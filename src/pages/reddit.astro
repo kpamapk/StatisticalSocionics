@@ -1,34 +1,27 @@
 ---
 import Layout from "@/layouts/Layout.astro";
+
+// Fetch posts on the server at build/request time
+const res = await fetch("https://www.reddit.com/r/TalanovQuestionnaires/new.json?limit=5");
+const data = await res.json();
+const posts = data?.data?.children ?? [];
 ---
 
 <Layout>
   <h1 class="text-2xl font-bold mb-4">Latest Posts from r/TalanovQuestionnaires</h1>
-  <div id="reddit-posts" class="space-y-4 text-sm text-foreground"></div>
 
-  <script type="module" is:inline>
-    async function loadPosts() {
-      const container = document.querySelector("#reddit-posts");
-
-      try {
-        const res = await fetch("https://www.reddit.com/r/TalanovQuestionnaires/new.json?limit=5");
-        const data = await res.json();
-        const posts = data.data.children;
-
-        container.innerHTML = posts.map(post => `
-          <div class="p-4 border border-muted rounded-md bg-background shadow-sm">
-            <a href="https://reddit.com${post.data.permalink}" target="_blank" class="text-accent font-medium underline">
-              ${post.data.title}
-            </a>
-            <p class="text-xs mt-1">by u/${post.data.author} • ${new Date(post.data.created_utc * 1000).toLocaleString()}</p>
-          </div>
-        `).join("");
-      } catch (err) {
-        container.innerHTML = "<p class='text-red-500'>Failed to load Reddit posts. Try again later.</p>";
-        console.error(err);
-      }
-    }
-
-    loadPosts();
-  </script>
+  {posts.length === 0 ? (
+    <p class="text-red-500">No posts found or failed to fetch.</p>
+  ) : (
+    <div class="space-y-4 text-sm text-foreground">
+      {posts.map(post => (
+        <div class="p-4 border border-muted rounded-md bg-background shadow-sm">
+          <a href={`https://reddit.com${post.data.permalink}`} target="_blank" class="text-accent font-medium underline">
+            {post.data.title}
+          </a>
+          <p class="text-xs mt-1">by u/{post.data.author} • {new Date(post.data.created_utc * 1000).toLocaleString()}</p>
+        </div>
+      ))}
+    </div>
+  )}
 </Layout>
