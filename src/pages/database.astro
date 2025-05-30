@@ -19,10 +19,11 @@ const posts = redditPosts;
     <!-- 🔁 Filtered Posts will appear here -->
     <div id="results" class="grid gap-6 sm:grid-cols-2">
       {posts.map(post => (
-        <a href={post.url} target="_blank" rel="noopener" class="block border rounded-md overflow-hidden hover:shadow-lg transition post-card">
+        <div class="block border rounded-md overflow-hidden hover:shadow-lg transition">
           <img src={post.image} alt={post.title} class="w-full object-cover max-h-64" loading="lazy" />
           <div class="p-3 text-sm font-medium">{post.title}</div>
-        </a>
+        </div>
+
       ))}
     </div>
   </main>
