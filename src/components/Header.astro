@@ -69,6 +69,15 @@ const isActive = (path: string) => {
           ]}
         >
           <li class="col-span-2">
+            <a href="/dichotomies" class:list={{ "active-nav": isActive("/dichotomies") }}>Dichotomies</a>
+          </li> 
+          <li class="col-span-2">
+            <a href="/functions" class:list={{ "active-nav": isActive("/functions") }}>Functions</a>
+          </li>
+          <li class="col-span-2">
+            <a href="/types" class:list={{ "active-nav": isActive("/types") }}>Types</a>
+          </li>
+          <li class="col-span-2">
             <a href="/posts" class:list={{ "active-nav": isActive("/posts") }}>
               Posts
             </a>
@@ -83,15 +92,9 @@ const isActive = (path: string) => {
               About
             </a>
           </li>
-          <li class="col-span-2">
-            <a href="/types" class:list={{ "active-nav": isActive("/types") }}>Types</a>
-          </li>
-          <li class="col-span-2">
-            <a href="/functions" class:list={{ "active-nav": isActive("/functions") }}>Functions</a>
-          </li>
-          <li class="col-span-2">
-            <a href="/dichotomies" class:list={{ "active-nav": isActive("/dichotomies") }}>Dichotomies</a>
-          </li>
+          
+         
+
 
           {
             SITE.showArchives && (
