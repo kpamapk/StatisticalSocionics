@@ -1,0 +1,17 @@
+export const dichotomies = [
+  { slug: "extraversion-introversion", label: "Extraversion / Introversion" },
+  { slug: "logic-ethics", label: "Logic / Ethics" },
+  { slug: "sensorics-intuition", label: "Sensorics / Intuition" },
+  { slug: "rationality-irrationality", label: "Rationality / Irrationality" },
+  { slug: "positivism-negativism", label: "Positivism / Negativism" },
+  { slug: "aristocracy-democracy", label: "Aristocracy / Democracy" },
+  { slug: "judiciousness-decisiveness", label: "Judiciousness / Decisiveness" },
+  { slug: "questim-declatim", label: "Questim / Declatim" },
+  { slug: "constructivism-emotivism", label: "Constructivism / Emotivism" },
+  { slug: "tactical-strategic", label: "Tactical / Strategic" },
+  { slug: "subjectivism-objectivism", label: "Subjectivism / Objectivism" },
+  { slug: "result-process", label: "Result / Process" },
+  { slug: "individualism", label: "Individualism / Collectivism" },
+  { slug: "obstinate-yielding", label: "Obstinate / Yielding" },
+  { slug: "static-dynamic", label: "Static / Dynamic" },
+];
