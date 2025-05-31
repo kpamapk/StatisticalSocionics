@@ -1,5 +1,5 @@
 ---
-title: "Fi – Introverted Ethics"
+title: "Fi – White Ethics"
 code: "Fi"
 description: "Inner values and personal relationships"
 ---
