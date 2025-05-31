@@ -4,7 +4,7 @@ code: "EII"
 description: "Introverted ethics with extroverted intuition"
 ---
 
-PSYCHOLOGICAL PORTRAIT OF A STANDARD “EII” (according to questionnaire statistics)
+**PSYCHOLOGICAL PORTRAIT OF A STANDARD “EII” (according to questionnaire statistics)**
 
 1. Characterized by conscientiousness, developed sense of guilt, justice instinct, respect for the rights and interests of others (especially those with whom he interacts).
 2. Possibly has a strong fear of social interaction due to indecisiveness, tendency to agonize over doubts and worries about trifles, and low self-esteem, fearing awkward social situations and becoming a subject of gossip.
