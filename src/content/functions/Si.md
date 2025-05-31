@@ -1,7 +1,6 @@
 ---
 title: "Si – White Sensorics"
 code: "Si"
-name: "White Sensorics"
 description: "Internal sensations and physical comfort"
 ---
 
