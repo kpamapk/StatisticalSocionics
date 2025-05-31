@@ -24,6 +24,7 @@ const blog = defineCollection({
 });
 
 const types = defineCollection({
+  loader: glob({ pattern: "**/[^_]*.md", base: "./src/content/types" }),
   schema: z.object({
     title: z.string(),
     code: z.string(),
@@ -32,6 +33,7 @@ const types = defineCollection({
 });
 
 const functions = defineCollection({
+  loader: glob({ pattern: "**/[^_]*.md", base: "./src/content/functions" }),
   schema: z.object({
     title: z.string(),
     code: z.string(),
@@ -40,6 +42,7 @@ const functions = defineCollection({
 });
 
 const dichotomies = defineCollection({
+  loader: glob({ pattern: "**/[^_]*.md", base: "./src/content/dichotomies" }),
   schema: z.object({
     title: z.string(),
     code: z.string(),
