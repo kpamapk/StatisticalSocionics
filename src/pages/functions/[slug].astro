@@ -1,0 +1,19 @@
+---
+import { getEntryBySlug } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+
+const { slug } = Astro.params;
+const entry = await getEntryBySlug("functions", slug);
+if (!entry) throw new Error(`Function not found: ${slug}`);
+
+const { title, description } = entry.data;
+const Content = entry.render().Content;
+---
+
+<Layout title={title}>
+  <h1 class="text-3xl font-bold mb-4">{title}</h1>
+  <p class="mb-4 text-gray-500 italic">{description}</p>
+  <article class="prose prose-sm sm:prose-base dark:prose-invert">
+    <Content />
+  </article>
+</Layout>
