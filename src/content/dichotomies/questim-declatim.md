@@ -1,7 +1,7 @@
 ---
 title: "Aristocratic / Democratic"
-slug: "aristocratic-democratic"
-image: ""  # Optional image path
+code: "aristocratic-democratic"
+description: "..."
 ---
 
 This page explains the **Aristocratic / Democratic** dichotomy in Socionics.
