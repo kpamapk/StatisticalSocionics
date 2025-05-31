@@ -1,5 +1,5 @@
 ---
-title: "Fe – Extroverted Ethics"
+title: "Fe – Black Ethics"
 code: "Fe"
 description: "Emotional expression and social atmosphere"
 ---
