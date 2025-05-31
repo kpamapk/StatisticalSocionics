@@ -9,6 +9,10 @@ import IconMenuDeep from "@/assets/icons/IconMenuDeep.svg";
 import LinkButton from "./LinkButton.astro";
 import { SITE } from "@/config";
 
+import { types } from "@/data/types";
+import { functions } from "@/data/functions";
+import { dichotomies } from "@/data/dichotomies";
+
 const { pathname } = Astro.url;
 
 const currentPath =
@@ -30,24 +34,15 @@ const isActive = (path: string) => {
   >
     Skip to content
   </a>
-  <div
-    id="nav-container"
-    class="mx-auto flex max-w-3xl flex-col items-center justify-between sm:flex-row"
-  >
+  <div class="mx-auto flex max-w-3xl flex-col items-center justify-between sm:flex-row">
     <div
       id="top-nav-wrap"
       class="relative flex w-full items-baseline justify-between bg-background p-4 sm:items-center sm:py-6"
     >
-      <a
-        href="/"
-        class="absolute py-1 text-2xl leading-7 font-semibold whitespace-nowrap sm:static"
-      >
+      <a href="/" class="absolute py-1 text-2xl leading-7 font-semibold whitespace-nowrap sm:static">
         {SITE.title}
       </a>
-      <nav
-        id="nav-menu"
-        class="flex w-full flex-col items-center sm:ml-2 sm:flex-row sm:justify-end sm:space-x-4 sm:py-0"
-      >
+      <nav id="nav-menu" class="flex w-full flex-col items-center sm:ml-2 sm:flex-row sm:justify-end sm:space-x-4 sm:py-0">
         <button
           id="menu-btn"
           class="focus-outline self-end p-2 sm:hidden"
@@ -68,64 +63,67 @@ const isActive = (path: string) => {
           ]}
         >
 
-          <li class="col-span-2">
-            <a href="/dichotomies" class:list={{ "active-nav": isActive("/dichotomies") }}>Dichotomies</a>
-          </li>
-          <li class="col-span-2">
-            <a href="/functions" class:list={{ "active-nav": isActive("/functions") }}>Functions</a>
-          </li>
-
-          <!-- Dropdown menu for Types -->
+          <!-- Dynamic Dropdown: Dichotomies -->
           <li class="col-span-2 relative group">
-            <a
-              href="/types"
-              class="dropdown-toggle inline-block w-full px-4 py-3 text-center font-medium hover:text-accent sm:text-left"
-              class:list={{ "active-nav": isActive("/types") }}
-            >
-              Types
+            <a href="/dichotomies" class="dropdown-toggle inline-block w-full px-4 py-3 text-center font-medium hover:text-accent sm:text-left"
+              class:list={{ "active-nav": isActive("/dichotomies") }}>
+              Dichotomies
             </a>
-            <ul
-              class="hidden sm:group-hover:flex absolute left-0 top-full z-10 w-40 flex-col bg-background shadow-lg"
-            >
-              <li><a href="/types/INTj" class="block px-4 py-2 hover:text-accent">INTj</a></li>
-              <li><a href="/types/ESFp" class="block px-4 py-2 hover:text-accent">ESFp</a></li>
-              <li><a href="/types/INFp" class="block px-4 py-2 hover:text-accent">INFp</a></li>
+            <ul class="hidden sm:group-hover:flex absolute left-0 top-full z-10 max-h-96 w-60 flex-col overflow-y-auto bg-background shadow-lg">
+              {dichotomies.map(d => (
+                <li><a href={`/dichotomies/${d.slug}`} class="block px-4 py-2 hover:text-accent">{d.label}</a></li>
+              ))}
             </ul>
           </li>
 
-          <li class="col-span-2">
-            <a href="/database" class:list={{ "active-nav": isActive("/database") }}>Database</a>
-          </li>
-          <li class="col-span-2">
-            <a href="/posts" class:list={{ "active-nav": isActive("/posts") }}>Posts</a>
-          </li>
-          <li class="col-span-2">
-            <a href="/tags" class:list={{ "active-nav": isActive("/tags") }}>Tags</a>
-          </li>
-          <li class="col-span-2">
-            <a href="/about" class:list={{ "active-nav": isActive("/about") }}>About</a>
+          <!-- Dynamic Dropdown: Functions -->
+          <li class="col-span-2 relative group">
+            <a href="/functions" class="dropdown-toggle inline-block w-full px-4 py-3 text-center font-medium hover:text-accent sm:text-left"
+              class:list={{ "active-nav": isActive("/functions") }}>
+              Functions
+            </a>
+            <ul class="hidden sm:group-hover:flex absolute left-0 top-full z-10 w-64 flex-col bg-background shadow-lg">
+              {functions.map(func => (
+                <li><a href={`/functions/${func.code}`} class="block px-4 py-2 hover:text-accent">{func.code} – {func.name}</a></li>
+              ))}
+            </ul>
           </li>
 
-          {
-            SITE.showArchives && (
-              <li class="col-span-2">
-                <LinkButton
-                  href="/archives"
-                  class:list={[
-                    "focus-outline flex justify-center p-3 sm:p-1",
-                    {
-                      "active-nav [&>svg]:stroke-accent": isActive("/archives"),
-                    },
-                  ]}
-                  ariaLabel="archives"
-                  title="Archives"
-                >
-                  <IconArchive class="hidden sm:inline-block" />
-                  <span class="sm:sr-only">Archives</span>
-                </LinkButton>
-              </li>
-            )
-          }
+          <!-- Dynamic Dropdown: Types -->
+          <li class="col-span-2 relative group">
+            <a href="/types" class="dropdown-toggle inline-block w-full px-4 py-3 text-center font-medium hover:text-accent sm:text-left"
+              class:list={{ "active-nav": isActive("/types") }}>
+              Types
+            </a>
+            <ul class="hidden sm:group-hover:flex absolute left-0 top-full z-10 max-h-96 w-64 flex-col overflow-y-auto bg-background shadow-lg">
+              {types.map(type => (
+                <li><a href={`/types/${type.code}`} class="block px-4 py-2 hover:text-accent">{type.code} – {type.name}</a></li>
+              ))}
+            </ul>
+          </li>
+
+          <!-- Static links -->
+          <li class="col-span-2"><a href="/database" class:list={{ "active-nav": isActive("/database") }}>Database</a></li>
+          <li class="col-span-2"><a href="/posts" class:list={{ "active-nav": isActive("/posts") }}>Posts</a></li>
+          <li class="col-span-2"><a href="/tags" class:list={{ "active-nav": isActive("/tags") }}>Tags</a></li>
+          <li class="col-span-2"><a href="/about" class:list={{ "active-nav": isActive("/about") }}>About</a></li>
+
+          {SITE.showArchives && (
+            <li class="col-span-2">
+              <LinkButton
+                href="/archives"
+                class:list={[
+                  "focus-outline flex justify-center p-3 sm:p-1",
+                  { "active-nav [&>svg]:stroke-accent": isActive("/archives") },
+                ]}
+                ariaLabel="archives"
+                title="Archives"
+              >
+                <IconArchive class="hidden sm:inline-block" />
+                <span class="sm:sr-only">Archives</span>
+              </LinkButton>
+            </li>
+          )}
 
           <li class="col-span-1 flex items-center justify-center">
             <LinkButton
@@ -142,22 +140,20 @@ const isActive = (path: string) => {
             </LinkButton>
           </li>
 
-          {
-            SITE.lightAndDarkMode && (
-              <li class="col-span-1 flex items-center justify-center">
-                <button
-                  id="theme-btn"
-                  class="focus-outline relative size-12 p-4 sm:size-8 hover:[&>svg]:stroke-accent"
-                  title="Toggles light & dark"
-                  aria-label="auto"
-                  aria-live="polite"
-                >
-                  <IconMoon class="absolute top-[50%] left-[50%] -translate-[50%] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
-                  <IconSunHigh class="absolute top-[50%] left-[50%] -translate-[50%] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
-                </button>
-              </li>
-            )
-          }
+          {SITE.lightAndDarkMode && (
+            <li class="col-span-1 flex items-center justify-center">
+              <button
+                id="theme-btn"
+                class="focus-outline relative size-12 p-4 sm:size-8 hover:[&>svg]:stroke-accent"
+                title="Toggles light & dark"
+                aria-label="auto"
+                aria-live="polite"
+              >
+                <IconMoon class="absolute top-[50%] left-[50%] -translate-[50%] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
+                <IconSunHigh class="absolute top-[50%] left-[50%] -translate-[50%] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
+              </button>
+            </li>
+          )}
         </ul>
       </nav>
     </div>
@@ -165,7 +161,7 @@ const isActive = (path: string) => {
   <Hr />
 </header>
 
-<!-- ✅ Script for menu and mobile dropdown -->
+<!-- ✅ Dropdown & mobile menu toggle script -->
 <script>
   function toggleNav() {
     const menuBtn = document.querySelector("#menu-btn");
@@ -185,14 +181,11 @@ const isActive = (path: string) => {
       closeIcon.classList.toggle("hidden");
     });
 
-    // Enable dropdown toggles on mobile
     const dropdownToggles = menuItems.querySelectorAll(".dropdown-toggle");
     dropdownToggles.forEach((toggle) => {
       const submenu = toggle.nextElementSibling;
-
       if (submenu && submenu.tagName === "UL") {
         toggle.addEventListener("click", (e) => {
-          // Only prevent default on mobile
           if (window.innerWidth < 640) {
             e.preventDefault();
             submenu.classList.toggle("hidden");
@@ -203,7 +196,5 @@ const isActive = (path: string) => {
   }
 
   toggleNav();
-
-  // Re-bind on Astro view transitions
   document.addEventListener("astro:after-swap", toggleNav);
 </script>
