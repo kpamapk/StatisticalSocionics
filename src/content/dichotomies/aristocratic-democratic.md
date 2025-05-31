@@ -1,6 +1,6 @@
 ---
 title: "Aristocracy vs Democracy"
-code: "aristocratic-democratic"
+code: "aristocracy-democracy"
 description: "Inclination toward hierarchy vs egalitarianism"
 ---
 
