@@ -1,6 +1,7 @@
 ---
 title: "Ne – Extroverted Intuition"
 code: "Ne"
+name: "Black Intuition"
 description: "Perceiving potential, novelty, and possibilities"
 ---
 
