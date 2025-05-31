@@ -1,7 +1,6 @@
 ---
 title: "Ti – White Logic"
 code: "Ti"
-name: "White Logic"
 description: "Abstract systems and logical consistency"
 ---
 
