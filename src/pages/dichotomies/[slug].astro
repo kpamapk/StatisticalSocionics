@@ -1,13 +1,13 @@
 ---
-import { getEntryBySlug } from "astro:content";
+import { getEntry } from "astro:content";
 import Layout from "@/layouts/Layout.astro";
 
 const { slug } = Astro.params;
-const entry = await getEntryBySlug("dichotomies", slug);
+const entry = await getEntry("dichotomies", slug);
 if (!entry) throw new Error(`Dichotomy not found: ${slug}`);
 
 const { title, description } = entry.data;
-const Content = entry.render().Content;
+const Content = entry.body;
 ---
 
 <Layout title={title}>
