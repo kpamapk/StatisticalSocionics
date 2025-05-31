@@ -1,6 +1,7 @@
 ---
 title: "Ni – Introverted Intuition"
 code: "Ni"
+name: "White Intuition"
 description: "Focusing on internal time patterns and insights"
 ---
 
