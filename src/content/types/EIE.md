@@ -4,7 +4,7 @@ code: "EIE"
 description: "Extroverted ethics with introverted intuition"
 ---
 
-PSYCHOLOGICAL PORTRAIT OF A STANDARD “EIE” (according to questionnaire statistics)
+**PSYCHOLOGICAL PORTRAIT OF A STANDARD “EIE” (according to questionnaire statistics)**
 
 1. Has strong intonational expressiveness in voice.
 2. People of this psychotype rarely choose simple and 'quiet' labor-intensive professions, especially in technical fields.
