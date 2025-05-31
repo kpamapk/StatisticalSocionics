@@ -1,10 +1,15 @@
 export const functions = [
-  { code: "Ne", name: "Extroverted Intuition" },
-  { code: "Ni", name: "Introverted Intuition" },
-  { code: "Se", name: "Extroverted Sensing" },
-  { code: "Si", name: "Introverted Sensing" },
-  { code: "Te", name: "Extroverted Logic" },
-  { code: "Ti", name: "Introverted Logic" },
-  { code: "Fe", name: "Extroverted Ethics" },
-  { code: "Fi", name: "Introverted Ethics" },
+  { code: "Ni", name: "White Intuition" },
+  { code: "Ne", name: "Black Intuition" },
+  { code: "Si", name: "White Sensorics" },
+  { code: "Se", name: "Black Sensorics" },
+  { code: "Ti", name: "White Logic" },
+  { code: "Te", name: "Black Logic" },
+  { code: "Fi", name: "White Ethics" },
+  { code: "Fe", name: "Black Ethics" },
+  { code: "Qi", name: "White Questimity" },
+  { code: "Qe", name: "Black Questimity" },
+  { code: "Di", name: "White Declatimity" },
+  { code: "De", name: "Black Declatimity" },
+  
 ];
