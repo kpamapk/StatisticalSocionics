@@ -1,7 +1,6 @@
 ---
 title: "Fe – Extroverted Ethics"
 code: "Fe"
-name: "Black Ethics"
 description: "Emotional expression and social atmosphere"
 ---
 
