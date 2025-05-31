@@ -1,6 +1,6 @@
 ---
-title: "Judiciousness vs Decisiveness"
-code: "judicious-decisive"
+title: "Central vs Peripheral"
+code: "central-peripheral"
 description: "Preference for flexibility vs firmness"
 ---
 
