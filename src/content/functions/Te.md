@@ -1,7 +1,6 @@
 ---
 title: "Te – Black Logic"
 code: "Te"
-name: "Black Logic"
 description: "Facts, efficiency, and objective data"
 ---
 
