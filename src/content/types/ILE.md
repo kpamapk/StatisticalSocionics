@@ -6,134 +6,114 @@ description: "Extroverted intuition with introverted logic"
 
 **PSYCHOLOGICAL PORTRAIT OF A STANDARD “ILE” (according to questionnaire statistics)**
 
-1. Characterized by shyness with the opposite sex, difficulty in initiating contact.
-2. Often exhibits elements of abulia—weak desires and motivations, struggling to earnestly want something.
-3. Tends to remain 'unnoticeable' among people, feels embarrassed and awkward when attention is directed at him.
-4. Avoids direct eye contact.
-5. Strong inductive reasoning skills, identifying common traits and laws in phenomena.
-6. Possibly lower sexual desire and libido than average.
-7. Poor and weak visual memory for faces and their individual differences.
-8. Has a scientific mindset and heightened interest in scientific knowledge and research.
-9. Often chooses and excels in programming as a profession.
-10. Preferred serious music over dance parties in youth.
-11. Lacks natural dancing ability; if learned, faces difficulties in mastering dance movements.
-12. Increased likelihood of anticipatory fears (fear of accidental touches, cuts, burns, scalding, flu, etc.).
-13. Strong research instinct, driven by intellectual curiosity and a desire to understand underlying causes.
-14. Lacks joy and pleasure, avoids heart-to-heart conversations, and feels uncomfortable with physical expressions of affection like hugs.
-15. Due to weak cognitive empathy, faces challenges in social interactions with people unlike himself.
-16. Poor attention to visual details—struggles to remember faces, inattentive to minor environmental changes.
-17. Easily recognizes similar traits across different phenomena, skilled in abstraction and generalization.
-18. Capable of quickly identifying common traits and mechanisms in different phenomena.
-19. Rational thought influences behavior more than primal instincts.
-20. Indifferent to purely physical pleasures like fitness, bodybuilding, massages, saunas.
-21. Likely dominance of the left cerebral hemisphere in visual processing, often leading to poor color and face recognition but good at recognizing general object classes.
-22. Slowness in muscle mobilization and low reaction speed.
-23. Reduced mobility of attention and difficulty in quick switching and flexible distribution of attention.
-24. Not brash or rude; rather cautious, indecisive, and shy.
-25. Highly erudite, possessing extensive knowledge in various fields.
-26. Unable to evoke repentance in others through non-verbal means.
-27. Typically modest and shy.
-28. Creative rather than consumerist in orientation.
-29. Focuses on the inner aspects of things, people, and phenomena; pays little attention to appearances.
-30. Often stares at objects or people but doesn't scrutinize them, looking 'through them.'
-31. Lacks Machiavellian traits like manipulation and cynicism; far from treating people merely as means to an end.
-32. Lacks talent for expressing feelings through body language and mimicking others convincingly.
-33. Struggles with cognitive empathy, making it hard to adapt flexibly to people or influence them.
-34. Dislikes flattery and excessive praise.
-35. Excellent at organizing, categorizing, and systematically analyzing complex phenomena.
-36. Thought process characterized by 'stickiness' and slowness, often hesitating in decision-making.
-37. Dislikes being surrounded by many people, especially those dependent on him.
-38. Feels uncomfortable among people, thus lacks a circle of useful contacts.
-39. Inattentive to others' faces and unable to read their emotional expressions.
-40. Generally weak in the visual processing areas responsible for perceiving human faces and individual visual differences.
-41. Dislikes jobs involving frequent interaction and service to others (e.g., bartending, tourism, hairdressing).
-42. Inattentive to personal and others' appearance; dresses conservatively and often carelessly.
-43. Lacks the psychological traits needed for network marketing.
-44. Exhibits distinctly polite communication, always formal, without slang or familiarity.
-45. Unsuitable for manipulating public opinion or spreading rumors.
-46. Quick to grasp the whole picture, perceiving situations and phenomena in their entirety.
-47. Visual memory images are generalized, imprecise, and blurry.
-48. Dislikes ostentation; no need to demonstrate superiority.
-49. Quickly tires and becomes distracted in noisy gatherings.
-50. Incapable of and disinterested in intriguing or manipulating others.
-51. Avoids noisy gatherings like weddings or discos.
-52. Easily restrains impatience and anger, avoiding aggressive outbursts.
-53. Unable to flatter or offer insincere compliments, even when it might be advantageous.
-54. Tends to have less muscle mass than average.
-55. Lacks desire and ability for mimicry or imitation.
-56. Deliberates actions carefully before reacting, not prone to impulsiveness.
-57. Not very persistent, with weak breakthrough capabilities.
-58. Highly adept at systematic and hierarchical classification, causality analysis, and formal logic.
-59. Does not accumulate irritation and anger, releasing frustrations gradually rather than explosively.
-60. Impartial and honest, avoids deceit and flattery, values truth and integrity in all dealings.
-61. Avoids drawing attention, does not interfere in others' matters, and acts without ostentation.
-62. Highly inquisitive and curious.
-63. Low sociability and contact; does not mind prolonged solitude.
-64. Weak color vision, pays little attention to colors, and experiences rapid onset of color blindness in dim light.
-65. Dislikes films that mock or embarrass characters, empathizing with them and sensitive to awkwardness.
-66. Less emotionally expressive and energetic than others.
-67. Does not engage in psychological attacks on others and struggles to gauge victims' reactions.
-68. Lacks talent for voice imitation, including specific vocal mannerisms, timbre, and intonations.
-69. If not engaged in logical tasks at work, enjoys solving crosswords and logic puzzles for leisure.
-70. Prefers abstract and general over specific and concrete.
-71. Lacks activity, sociability, and vitality; tends to be reserved and shy, quickly fatigued by social interaction.
-72. Likely has a stooped posture, far from a military bearing.
-73. Shows low initiative.
-74. Painfully reacts to awkward social situations.
-75. Develops psychological dependencies (addictions) more slowly than others, showing resilience to risks like gaming, shopping, or substance abuse.
-76. Rarely, if ever, shares personal romantic details with friends.
-77. Not very hospitable or sociable.
-78. Does not experience hypomanic states, marked by thought acceleration and potential irritability.
-79. Dislikes boasting.
-80. Weak observational skills, missing many visual details and grasping only the general impression of seen objects.
-81. Enjoys collecting and organizing items, or sorting routine trivialities into categories.
-82. More impartial and fair than others.
-83. Typically develops speech later than average in childhood.
-84. Would find sales or customer relations roles challenging due to difficulty in forming warm, friendly contacts.
-85. Lacks decisiveness; hesitant and slow in decision-making, often wavering and reconsidering.
-86. Neglects physical and skincare.
-87. Generally uninterested in others.
-88. Values personal creative and constructive work over consumption and manipulation.
-89. Prone to long-standing fixations on fears, doubts, and awkwardness.
-90. Quickly assesses the direction of main forces in any given situation, exhibiting strong strategic and political thinking.
-91. Struggles to single out a specific voice in a noisy crowd.
-92. Unable to entertain or lift others' spirits, needing external stimulation to boost his own mood.
-93. Seldom buys new clothes, indifferent to shopping.
-94. Feels a constant energy deficit, conserving both physical and emotional resources.
-95. May have a higher incidence of stuttering, either in childhood or even currently.
-96. Highly sensitive to logical connections between objects and events, skilled in formal logical analysis.
-97. Lacks the need to be first or most prominent, indifferent to status.
-98. Poor long-term visual memory for surroundings.
-99. Dislikes physical contact during conversations, even with friends.
-100. Significantly less talkative, sociable, and approachable than others.
-101. Prefers to build wealth through personal creative work rather than exploiting others.
-102. Experiences ecstatic revelations frequently, deriving joy from discoveries.
-103. Sincere, just, truthful, honest, not greedy, lacks manipulative skills, straightforward in interactions, and disinterested in deceit or duplicity.
-104. Low competitive behavior, avoids rivalry and dominance, does not seek leadership or affirmation of his position.
-105. Not jealous in relationships, trusts partners and grants them significant personal freedom.
-106. Likely prefers deep, calm blue as a favorite color.
-107. Avoids discussing his connections and acquaintances.
-108. Extremely phlegmatic, hard to provoke.
-109. Likely very patient.
-110. Excels in abstract thinking, enjoys using philosophical concepts of high abstraction.
-111. Struggles with switching tasks quickly due to delayed alternative motor excitation.
-112. More likely to have a lower melanin content in the skin, resulting in typical paleness and poor tanning ability, often having blue eyes.
-113. Strong social and altruistic interests, keenly follows politics and global developments, driven by a desire for social justice.
-114. Does not demand respect based on status or accomplishments, indifferent to external signs of respect.
-115. Avoids situations that might lead to public disputes or confrontations, not inclined to provoke them.
-116. Takes initiative in a group only if necessary, knowing the best course of action but reluctant to lead.
-117. Intensively thinks nearly every moment, always engaged mentally.
-118. Tends to have weaker orgasms than average.
-119. Peaceful and balanced, unsuited for roles that provoke or unsettle others.
-120. Non-demonstrative behavior—restrained and modest, avoids emotionally charged situations, adapts slowly to new social environments.
-121. More reflective than action-oriented.
-122. Introverted subtype dislikes public speaking, lacking confidence and the ability to project his voice.
-123. Very low facial expressiveness.
-124. Does not express excitement during pivotal moments in sports, remains quiet.
-125. Struggles in conflict-ridden environments.
-126. Slower simple motor reactions.
-127. Consistently uses formal logic in reasoning, nearly flawless in logical strictness.
-128. Face tends to be narrower rather than wider compared to average.
-129. Likely has a reduced appetite.
-130. Least likely among his sociotype to have tattoos, reflecting a general aversion to body modifications.
-
+1. Characterized by a constant need for novelty and change, heightened interest in new things and innovations.
+2. Insightful, an innovator; often a newsmaker-inventor; enjoys discovering, inventing, and trying out original, non-obvious ideas, and uncovering new possibilities.
+3. Prefers situations with multiple options available, overall favoring diversity and maximum freedom of choice. Loves multivariant situations closely correlated with his innovative nature.
+4. Displays broad curiosity about all things new and unknown.
+5. An advocate for innovation and progressive reforms, comfortable with the prospect of frequent changes, and dislikes societal 'freezing' for the sake of stability, especially if it's enforced by a personalistic dictatorship.
+6. Tends to act with an initial excess of impulsiveness, apparent in his sweeping movements and the boldness and grandiosity of his ideas.
+7. Likely to pace back and forth in a room when excited or agitated.
+8. Engages in broad, associative mental searching from an initial point without temporal sequencing, ending in a moment of pleasurable discovery. This results in easy distractibility, improvisation, and a non-linear approach but also in successful discovery and wide-ranging insights.
+9. Capable of quickly generating a variety of alternative ideas on any topic.
+10. A firm believer in progressive values that look to the future rather than the past.
+11. No preference for integers over irrational numbers, clear boundaries over blurred sets, certainty over probability, or a few options over many.
+12. Displays extremely high inquisitive curiosity and inquisitiveness.
+13. Averse to conservatism in any form; needs frequent changes in everything and adapts easily to changes in the environment.
+14. Poor at sensing dangers and often underestimates them.
+15. Struggles to understand people well and often finds it hard to determine if a work colleague is a friend.
+16. Enjoys working with information analysis and constantly needs fresh information to process.
+17. Likely to exhibit involuntary motor automatisms, especially when excited (e.g., tapping, fidgeting).
+18. Generally unobservant of others' relationships and actions.
+19. Often exhibits a roving, unfocused gaze due to visual inattentiveness.
+20. Believes it is beneficial for children to read nonsensical poetry.
+21. Prone to hypnagogic visual pseudohallucinations when falling asleep.
+22. Has a subconscious inclination toward dromomania—passion for frequent, long-distance travel and wandering.
+23. Often harbors grand 'super-ideas' that excite him.
+24. Attracted to complex, grand-scale, and original challenges; avoids routine tasks.
+25. Would find it extremely unpleasant to live an ordinary life 'like everyone else'.
+26. Fascinated by all things mysterious and enigmatic, striving to solve these mysteries or eagerly follows their resolution.
+27. Very far from any conservatism in his plans and behavior; loves novelty, the unexplored, and diversity.
+28. More focused on the future than the past in his thoughts.
+29. Likely to have a habit of fiddling with objects while thinking.
+30. His handwriting is likely to be 'messy' and illegible.
+31. Prone to motor compulsions—repetitive, habitual, non-functional movements.
+32. Specializes in intellectual issues and complex intellectual tasks.
+33. Weak sense of familial or in-group loyalty, does not categorize people as 'us' vs. 'them'.
+34. Enjoys paradoxes and mentally experimenting with incompatible combinations.
+35. Detests prohibitions and restrictions in societal behavior regulation; believes in maximizing freedom and improvisation.
+36. Likely opposes ideological and customs borders, favoring peaceful international cooperation.
+37. Possesses strong probabilistic thinking, able to mentally handle probabilities and ambiguous situations.
+38. Driven by a strong research instinct, motivated to understand the underlying reasons for his experiences.
+39. Likely enjoys books and films in the magical fantasy genre.
+40. Often disregards group morality, does not like moralists.
+41. Key characteristic: interest. Prone to abandoning current tasks if something more interesting appears.
+42. More interested in the initial phases of projects than in their completion, often leaving tasks unfinished.
+43. Dislikes staying at home, drawn to changing locations and occasionally to vagrancy.
+44. Advocates for minimal social regulation of behavior, opposes stringent, comprehensive controls.
+45. Not punctual, often late to meetings or arrives just in time.
+46. Enjoys probabilistic reasoning and handling conflicting concepts within the same model.
+47. Experiences ecstatic feelings from frequent sensations of discovery and revelation.
+48. Prefers metaphorical-probabilistic thinking over literal interpretations.
+49. Highly attracted to the unexpected and unique, finds pleasure and inspiration in originality.
+50. Fickle, rapidly shifts mental focus between tasks, prefers breadth over depth.
+51. Scattered, struggles to maintain focus on any one topic for long.
+52. Impulsive and often riskily obsessed, prefers revolutionary changes over stasis.
+53. Has a sense of humor about himself and serious matters.
+54. Independent and bold in his views, does not rely on leaders or authorities.
+55. Behaves more anarchically than others, often disregarding societal norms and prohibitions.
+56. Struggles to correctly perceive hostile signals from others.
+57. May have a habit of clicking his teeth.
+58. Often frivolous in relationships, lacking in attentiveness and caution.
+59. Values disruption over stability, enjoys disturbing or seeing disturbances in order.
+60. Uses imagination to accentuate and emphasize unusual aspects.
+61. Dismissive of discussions about 'the voice of blood,' does not believe in such concepts.
+62. Does not consider personal loyalty and fidelity as the main virtues; values creative talents more.
+63. Prone to illusions of novelty, experiencing the unfamiliarity of familiar settings.
+64. Skilled at finding common features across different phenomena, excels at abstracting and theorizing.
+65. Seeks information that raises doubts or prompts reflection.
+66. Often speaks quickly and unclearly, sometimes swallowing endings of words.
+67. Prefers aesthetics of incompleteness, ambiguity, disorder, and asymmetry.
+68. Generally indifferent to adhering to accepted social norms.
+69. Likely to stand out in a crowd with either avant-garde or sloppy, outdated clothing.
+70. Does not engage in moralizing conversations.
+71. Due to low cognitive empathy, struggles with social interactions with people who are not like him.
+72. Likely enjoys films and books about long-distance travel.
+73. Rarely feels a strong affiliation with any group, maintains a high level of independence.
+74. Enjoys mocking and satirizing, often sarcastic.
+75. Deeply averse to conventionality and traditional standards in thoughts and lifestyle.
+76. Prefers high-risk, potentially high-reward gambles.
+77. Characterized by grandiosity in his ideas and plans.
+78. Disregards societal moral norms and others' reactions to his actions.
+79. Unlikely to be nationalistic or xenophobic, more likely to be an internationalist.
+80. Experiences instability in desires and frequently changes activities.
+81. Pays little attention to personal neatness.
+82. Tolerant of social and moral rule violations, places little importance on reputation.
+83. Likely to frequently chew or grind his teeth, especially when thinking.
+84. Opposes control over people and their behavior, advocates for freedom.
+85. Reduced development of frontal motor areas of the brain.
+86. Dislikes 'police state' models with enforced unanimity and total control.
+87. Often plans at the last minute, quickly changing courses unexpectedly.
+88. Engages in intense mental activity nearly constantly.
+89. Strongly opposes isolating his country behind an invisible wall.
+90. Lacks zeal for domestic order, sometimes entirely ignores it.
+91. Values unpredictability, often acts unexpectedly as if deciding by coin flip.
+92. Scientifically minded, with a serious interest in science.
+93. Prone to confusion about the current month, date, and day.
+94. Shows little inclination to care for or protect his family or kin.
+95. Lacks domestic perfectionism, instead lives a semi-bohemian lifestyle.
+96. Positive attitude towards individual talents over collective structures.
+97. Enjoys diversity in all aspects.
+98. Prone to uncontrollable phonetic errors in speech.
+99. Frequently deviates from schedules, often late, misses deadlines.
+100. Enjoys surprises and unpredictabilities in life.
+101. Has high alertness, requires little sleep, and experiences infrequent daytime sleepiness.
+102. Often goes 'against the current,' unafraid to stand alone against the majority or authorities.
+103. Typically consumes more water daily than others.
+104. Often uses neologisms in speech, creating new words.
+105. Frequently experiences an 'airy euphoria' in his mood, often accompanied by joyful amazement.
+106. Low tolerance for monotonous tasks, quickly seeks variety in activities.
+107. Short memory for good deeds done to him, expecting quick reciprocation.
+108. Tends to 'spread out' in thought, veering into irrelevant associations.
+109. Often so engrossed in tasks that he is unaware of his surroundings.
+110. Completely rejects the concepts of predestination and fate, believes in self-determination.
+111. Possesses a very strong imagination.
