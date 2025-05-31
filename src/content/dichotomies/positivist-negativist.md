@@ -1,9 +1,7 @@
 ---
-title: "Positivist / Negativist"
-slug: "positivist-negativist"
-image: ""  # Optional image path
+title: "Positivism vs Negativism"
+code: "positivist-negativist"
+description: "Belief in the positive vs critical stance"
 ---
 
-This page explains the **Positivist / Negativist** dichotomy in Socionics.
-
-You can edit and expand this content with detailed descriptions, examples, or diagrams.
+This is a placeholder page for **Positivism vs Negativism**.

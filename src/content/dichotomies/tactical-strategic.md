@@ -1,9 +1,7 @@
 ---
-title: "Tactical / Strategic"
-slug: "tactical-strategic"
-image: ""  # Optional image path
+title: "Tactical vs Strategic"
+code: "tactical-strategic"
+description: "Preference for details vs big picture"
 ---
 
-This page explains the **Tactical / Strategic** dichotomy in Socionics.
-
-You can edit and expand this content with detailed descriptions, examples, or diagrams.
+This is a placeholder page for **Tactical vs Strategic**.

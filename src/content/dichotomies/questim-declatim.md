@@ -1,9 +1,7 @@
 ---
-title: "Aristocratic / Democratic"
-code: "aristocratic-democratic"
-description: "..."
+title: "Questim vs Declatim"
+code: "questim-declatim"
+description: "Question-based vs statement-based communication"
 ---
 
-This page explains the **Aristocratic / Democratic** dichotomy in Socionics.
-
-You can edit and expand this content with detailed descriptions, examples, or diagrams.
+This is a placeholder page for **Questim vs Declatim**.

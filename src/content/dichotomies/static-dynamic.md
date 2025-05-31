@@ -1,9 +1,7 @@
 ---
-title: "Static / Dynamic"
-slug: "static-dynamic"
-image: ""  # Optional image path
+title: "Static vs Dynamic"
+code: "static-dynamic"
+description: "Focus on constants vs change"
 ---
 
-This page explains the **Static / Dynamic** dichotomy in Socionics.
-
-You can edit and expand this content with detailed descriptions, examples, or diagrams.
+This is a placeholder page for **Static vs Dynamic**.

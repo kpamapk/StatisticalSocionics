@@ -1,9 +1,7 @@
 ---
-title: "Process / Result"
-slug: "process-result"
-image: ""  # Optional image path
+title: "Process vs Result"
+code: "process-result"
+description: "Emphasis on the journey vs the goal"
 ---
 
-This page explains the **Process / Result** dichotomy in Socionics.
-
-You can edit and expand this content with detailed descriptions, examples, or diagrams.
+This is a placeholder page for **Process vs Result**.

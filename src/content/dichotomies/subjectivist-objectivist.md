@@ -1,9 +1,7 @@
 ---
-title: "Subjectivist / Objectivist"
-slug: "subjectivist-objectivist"
-image: ""  # Optional image path
+title: "Subjectivism vs Objectivism"
+code: "subjectivist-objectivist"
+description: "Valuing personal perspective vs external standards"
 ---
 
-This page explains the **Subjectivist / Objectivist** dichotomy in Socionics.
-
-You can edit and expand this content with detailed descriptions, examples, or diagrams.
+This is a placeholder page for **Subjectivism vs Objectivism**.

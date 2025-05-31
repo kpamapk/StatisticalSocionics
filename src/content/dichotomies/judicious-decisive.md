@@ -1,9 +1,7 @@
 ---
-title: "Judicious / Decisive"
-slug: "judicious-decisive"
-image: ""  # Optional image path
+title: "Judiciousness vs Decisiveness"
+code: "judicious-decisive"
+description: "Preference for flexibility vs firmness"
 ---
 
-This page explains the **Judicious / Decisive** dichotomy in Socionics.
-
-You can edit and expand this content with detailed descriptions, examples, or diagrams.
+This is a placeholder page for **Judiciousness vs Decisiveness**.
