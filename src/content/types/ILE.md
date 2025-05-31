@@ -4,7 +4,7 @@ code: "ILE"
 description: "Extroverted intuition with introverted logic"
 ---
 
-**PSYCHOLOGICAL PORTRAIT OF A STANDARD “EIE” (according to questionnaire statistics)**
+**PSYCHOLOGICAL PORTRAIT OF A STANDARD “ILE” (according to questionnaire statistics)**
 
 1. Characterized by shyness with the opposite sex, difficulty in initiating contact.
 2. Often exhibits elements of abulia—weak desires and motivations, struggling to earnestly want something.
