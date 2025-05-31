@@ -1,0 +1,18 @@
+export const types = [
+  { code: "ILE", name: "Intuitive Logical Extrovert" },
+  { code: "LII", name: "Logical Intuitive Introvert" },
+  { code: "ESE", name: "Ethical Sensory Extrovert" },
+  { code: "SEI", name: "Sensory Ethical Introvert" },
+  { code: "SLE", name: "Sensory Logical Extrovert" },
+  { code: "LSI", name: "Logical Sensory Introvert" },
+  { code: "IEE", name: "Intuitive Ethical Extrovert" },
+  { code: "EII", name: "Ethical Intuitive Introvert" },
+  { code: "LIE", name: "Logical Intuitive Extrovert" },
+  { code: "ILI", name: "Intuitive Logical Introvert" },
+  { code: "SEE", name: "Sensory Ethical Extrovert" },
+  { code: "ESI", name: "Ethical Sensory Introvert" },
+  { code: "EIE", name: "Ethical Intuitive Extrovert" },
+  { code: "IEI", name: "Intuitive Ethical Introvert" },
+  { code: "LSE", name: "Logical Sensory Extrovert" },
+  { code: "SLI", name: "Sensory Logical Introvert" },
+];
