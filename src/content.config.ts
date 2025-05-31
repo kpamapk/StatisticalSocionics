@@ -28,7 +28,6 @@ const types = defineCollection({
     title: z.string(),
     code: z.string(),
     description: z.string(),
-    name: z.string(),
   }),
 });
 
@@ -37,7 +36,6 @@ const functions = defineCollection({
     title: z.string(),
     code: z.string(),
     description: z.string(),
-    name: z.string(),
   }),
 });
 
@@ -46,7 +44,6 @@ const dichotomies = defineCollection({
     title: z.string(),
     code: z.string(),
     description: z.string(),
-    name: z.string(),
   }),
 });
 
