@@ -23,35 +23,31 @@ const blog = defineCollection({
     }),
 });
 
-// Define new collections
 const types = defineCollection({
-  type: "content",
   schema: z.object({
     title: z.string(),
-    description: z.string().optional(),
+    code: z.string(),
+    description: z.string(),
+    name: z.string(),
   }),
 });
 
 const functions = defineCollection({
-  type: "content",
   schema: z.object({
+    title: z.string(),
     code: z.string(),
+    description: z.string(),
     name: z.string(),
-    description: z.string().optional(),
   }),
 });
 
 const dichotomies = defineCollection({
-  type: "content",
   schema: z.object({
     title: z.string(),
-    description: z.string().optional(),
+    code: z.string(),
+    description: z.string(),
+    name: z.string(),
   }),
 });
 
-export const collections = {
-  blog,
-  types,
-  functions,
-  dichotomies,
-};
+export const collections = { blog, types, functions, dichotomies };
