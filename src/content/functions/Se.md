@@ -1,6 +1,7 @@
 ---
-title: "Se – Extroverted Sensing"
+title: "Se – Black Sensorics"
 code: "Se"
+name: "Black Sensorics"
 description: "Real-time physical presence and external control"
 ---
 
