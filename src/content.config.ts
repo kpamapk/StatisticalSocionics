@@ -9,19 +9,19 @@ const baseSchema = z.object({
 
 export const collections = {
   types: defineCollection({
-    loader: glob({ base: "./src/content/types", pattern: "/*.md" }),
+    loader: glob({ base: "./src/content/types", pattern: "**/*.md" }),
     schema: baseSchema,
   }),
   functions: defineCollection({
-    loader: glob({ base: "./src/content/functions", pattern: "/*.md" }),
+    loader: glob({ base: "./src/content/functions", pattern: "**/*.md" }),
     schema: baseSchema,
   }),
   dichotomies: defineCollection({
-    loader: glob({ base: "./src/content/dichotomies", pattern: "/*.md" }),
+    loader: glob({ base: "./src/content/dichotomies", pattern: "**/*.md" }),
     schema: baseSchema,
   }),
   neurosocionics: defineCollection({
-    loader: glob({ base: "./src/content/neurosocionics", pattern: "/*.md" }),
+    loader: glob({ base: "./src/content/neurosocionics", pattern: "**/*.md" }),
     schema: baseSchema,
   }),
   database: defineCollection({
