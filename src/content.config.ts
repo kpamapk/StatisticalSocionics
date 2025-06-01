@@ -1,8 +1,8 @@
-import { defineCollection, z, glob } from "astro:content";
+import { defineCollection, z } from "astro:content";
 
 export const collections = {
   types: defineCollection({
-    loader: async () => glob("./src/content/types/**/*.md"),
+    loader: async () => import.meta.glob('./types/**/*.md'),
     schema: z.object({
       title: z.string(),
       code: z.string(),
@@ -10,7 +10,7 @@ export const collections = {
     }),
   }),
   functions: defineCollection({
-    loader: async () => glob("./src/content/functions/**/*.md"),
+    loader: async () => import.meta.glob('./functions/**/*.md'),
     schema: z.object({
       title: z.string(),
       code: z.string(),
@@ -18,7 +18,7 @@ export const collections = {
     }),
   }),
   dichotomies: defineCollection({
-    loader: async () => glob("./src/content/dichotomies/**/*.md"),
+    loader: async () => import.meta.glob('./dichotomies/**/*.md'),
     schema: z.object({
       title: z.string(),
       code: z.string(),
