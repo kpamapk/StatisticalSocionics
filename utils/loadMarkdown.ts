@@ -1,31 +1,19 @@
-import fs from "fs/promises";
+import fs from "fs";
 import path from "path";
-import matter from "gray-matter";
+import { markdown } from "astro:markdown";
 
-export interface MarkdownEntry<T = any> {
-  slug: string;
-  content: string;
-  frontmatter: T;
-}
-
-export async function loadMarkdownDir<T = any>(dir: string): Promise<MarkdownEntry<T>[]> {
-  const directory = path.resolve(`./src/content/${dir}`);
-  const files = await fs.readdir(directory);
+export async function loadMarkdownDir(dir: string) {
+  const fullPath = path.resolve(dir);
+  const files = fs.readdirSync(fullPath);
 
   const entries = await Promise.all(
     files
-      .filter(file => file.endsWith(".md"))
-      .map(async file => {
-        const filepath = path.join(directory, file);
-        const raw = await fs.readFile(filepath, "utf-8");
-        const { data, content } = matter(raw);
-        const slug = file.replace(/\.md$/, "");
-
-        return {
-          slug,
-          frontmatter: data as T,
-          content,
-        };
+      .filter((file) => file.endsWith(".md"))
+      .map(async (filename) => {
+        const slug = filename.replace(/\.md$/, "");
+        const raw = fs.readFileSync(path.join(fullPath, filename), "utf-8");
+        const rendered = await markdown(raw);
+        return { slug, rendered };
       })
   );
 
