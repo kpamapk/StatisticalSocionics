@@ -33,4 +33,4 @@ export const collections = {
     loader: glob({ base: "./src/content/neurosocionics", pattern: "**/*.md" }),
     schema: baseSchema,
   }),
-};
+} as const;
