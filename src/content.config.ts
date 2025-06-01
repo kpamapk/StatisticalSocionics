@@ -1,4 +1,5 @@
 import { defineCollection, z } from "astro:content";
+import { glob } from "astro/loaders";
 
 const typeSchema = z.object({
   title: z.string(),
@@ -8,15 +9,15 @@ const typeSchema = z.object({
 
 export const collections = {
   types: defineCollection({
+    loader: glob({ pattern: "**/*.md", base: "./src/content/types" }),
     schema: typeSchema,
-    loader: async () => import.meta.glob('./types/**/*.md'),
   }),
   functions: defineCollection({
+    loader: glob({ pattern: "**/*.md", base: "./src/content/functions" }),
     schema: typeSchema,
-    loader: async () => import.meta.glob('./functions/**/*.md'),
   }),
   dichotomies: defineCollection({
+    loader: glob({ pattern: "**/*.md", base: "./src/content/dichotomies" }),
     schema: typeSchema,
-    loader: async () => import.meta.glob('./dichotomies/**/*.md'),
   }),
 };
