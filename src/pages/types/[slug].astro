@@ -1,12 +1,12 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import { getEntry } from "astro:content";
+import { getEntry, render } from "astro:content";
 
 const { slug } = Astro.params;
 const entry = await getEntry("types", slug);
 if (!entry) throw new Error(`Type not found: ${slug}`);
 
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 const { title, description } = entry.data;
 ---
 
