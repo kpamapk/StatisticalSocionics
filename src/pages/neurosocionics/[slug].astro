@@ -1,11 +1,10 @@
 ---
-import { getEntryBySlug } from "astro:content";
+import { getEntry } from "astro:content";
 import Layout from "@/layouts/Layout.astro";
 
 const { slug } = Astro.params;
-
-const entry = await getEntryBySlug("neurosocionics", slug);
-if (!entry) throw new Error("Not found");
+const entry = await getEntry("neurosocionics", slug);
+if (!entry) throw new Error("Entry not found");
 
 const { title, description } = entry.data;
 const { Content } = await entry.render();
