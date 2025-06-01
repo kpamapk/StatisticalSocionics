@@ -13,6 +13,13 @@ if (!entry) {
 
 const { frontmatter, content } = entry;
 const rendered = await markdown(content);
+
+export async function getStaticPaths() {
+  const entries = await loadMarkdownDir("functions");
+  return entries.map((entry) => ({
+    params: { slug: entry.slug },
+  }));
+}
 ---
 
 <Layout title={frontmatter.title} description={frontmatter.description}>
