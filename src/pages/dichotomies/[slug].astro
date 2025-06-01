@@ -2,8 +2,11 @@
 import Layout from "@/layouts/Layout.astro";
 import { getEntry, render } from "astro:content";
 
+// get slug from URL
 const { slug } = Astro.params;
-const entry = await getEntry("dichotomies", slug); // use literal collection name
+
+// Tell TypeScript the collection type!
+const entry = await getEntry<"dichotomies">(slug);
 if (!entry) throw new Error(`Entry not found: ${slug}`);
 
 const { Content } = await render(entry);
