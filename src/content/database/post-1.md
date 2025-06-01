@@ -1,6 +1,6 @@
 ---
 title: "Weakness of Reactions of Irritation, Hatred"
-code:
+code: "post-1"
 image: "/reddit-images/post-1.jpeg"
 url: "https://reddit.com/r/TalanovQuestionnaires/comments/1kz6ett/weakness_of_reactions_of_irritation_hatred_ma..."
 ---
