@@ -3,7 +3,6 @@ title: "Weakness of Reactions of Irritation, Hatred"
 code: "post-1"
 image: "/reddit-images/post-1.jpeg"
 description: "Weakness of reactions"
-url: "https://reddit.com/r/TalanovQuestionnaires/comments/1kz6ett/weakness_of_reactions_of_irritation_hatred_ma..."
 ---
 
 1. If all people were divided into two equal groups—one of more evil and suspicious individuals and the other of more good-natured and content ones—I would more likely belong to THE SECOND GROUP, the group of good-natured people. 0.938  
