@@ -1,23 +1,28 @@
-import { defineCollection, z } from "astro:content";
-import { glob } from "astro/loaders";
-
-const baseSchema = z.object({
-  title: z.string(),
-  code: z.string(),
-  description: z.string(),
-});
+import { defineCollection, z, glob } from "astro:content";
 
 export const collections = {
   types: defineCollection({
-    loader: glob({ pattern: "**/[^_]*.md", base: "./src/content/types" }),
-    schema: baseSchema,
+    loader: async () => glob("./src/content/types/**/*.md"),
+    schema: z.object({
+      title: z.string(),
+      code: z.string(),
+      description: z.string(),
+    }),
   }),
   functions: defineCollection({
-    loader: glob({ pattern: "**/[^_]*.md", base: "./src/content/functions" }),
-    schema: baseSchema,
+    loader: async () => glob("./src/content/functions/**/*.md"),
+    schema: z.object({
+      title: z.string(),
+      code: z.string(),
+      description: z.string(),
+    }),
   }),
   dichotomies: defineCollection({
-    loader: glob({ pattern: "**/[^_]*.md", base: "./src/content/dichotomies" }),
-    schema: baseSchema,
+    loader: async () => glob("./src/content/dichotomies/**/*.md"),
+    schema: z.object({
+      title: z.string(),
+      code: z.string(),
+      description: z.string(),
+    }),
   }),
 };
