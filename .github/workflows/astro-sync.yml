@@ -1,0 +1,34 @@
+name: Astro Sync
+
+on:
+  workflow_dispatch:  # You will run this manually
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
+      - name: Install Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Run astro sync
+        run: npx astro sync
+
+      - name: Commit updated types
+        run: |
+          git config --global user.name "astro-sync-bot"
+          git config --global user.email "bot@astro.build"
+          git add .
+          git commit -m "chore: regenerate Astro types via GitHub Actions"
+          git push
