@@ -1,8 +1,8 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import { getEntry } from "astro:content";
-import { slug } from "astro:params";
 
+const { slug } = Astro.params;
 const entry = await getEntry("dichotomies", slug);
 if (!entry) throw new Error(`Dichotomy entry not found for slug: ${slug}`);
 
