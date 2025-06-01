@@ -15,7 +15,7 @@ const { frontmatter, content } = entry;
 const rendered = await markdown(content);
 
 export async function getStaticPaths() {
-  const entries = await loadMarkdownDir("dichotomies");
+  const entries = await loadMarkdownDir("neurosocionics");
   return entries.map((entry) => ({
     params: { slug: entry.slug },
   }));
