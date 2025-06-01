@@ -1,7 +1,7 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import { loadMarkdownDir } from "@/utils/loadMarkdown";
-import { markdown } from "astro:markdown-remark";
+import { markdown } from "astro:markdown";
 
 const { slug } = Astro.params;
 const entries = await loadMarkdownDir("neurosocionics");
