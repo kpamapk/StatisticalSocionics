@@ -1,0 +1,15 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+
+const entries = await getCollection("neurosocionics");
+---
+
+<Layout title="Neurosocionics" description="Neuroscientific research on Socionics.">
+  <h1>Neurosocionics</h1>
+  <ul>
+    {entries.map(entry => (
+      <li><a href={`/neurosocionics/${entry.slug}`}>{entry.data.title}</a></li>
+    ))}
+  </ul>
+</Layout>
