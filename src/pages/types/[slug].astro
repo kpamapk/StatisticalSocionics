@@ -1,19 +1,19 @@
 ---
+import Layout from "@/layouts/Layout.astro";
 import { getEntry } from "astro:content";
-import { useParams } from "astro/runtime";
 
-const { slug } = useParams();
+const { slug } = Astro.params;
 const entry = await getEntry("types", slug);
+if (!entry) throw new Error(`Type not found: ${slug}`);
 
-if (!entry) throw new Error(`Entry not found for slug: ${slug}`);
 const { Content } = await entry.render();
 const { title, description } = entry.data;
 ---
 
 <Layout title={title} description={description}>
-  <article>
-    <h1>{title}</h1>
-    <p>{description}</p>
+  <article class="prose mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-4">{title}</h1>
+    <p class="text-lg mb-6">{description}</p>
     <Content />
   </article>
 </Layout>
