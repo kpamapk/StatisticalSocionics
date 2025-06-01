@@ -1,28 +1,24 @@
 ---
-// Import types
-import { getEntry, render } from "astro:content";
 import Layout from "@/layouts/Layout.astro";
+import { loadMarkdownDir } from "@/utils/loadMarkdown";
+import { markdown } from "astro:markdown-remark";
 
-// Get the slug param
 const { slug } = Astro.params;
+const entries = await loadMarkdownDir("neurosocionics");
+const entry = entries.find((e) => e.slug === slug);
 
-// Do not assert type here
-const entry = await getEntry("neurosocionics", slug);
-
-// Handle 404
 if (!entry) {
   throw new Error(`Entry not found: ${slug}`);
 }
 
-// Safe to access after null check
-const { Content } = await render(entry);
-const { title, description } = entry.data;
+const { frontmatter, content } = entry;
+const rendered = await markdown(content);
 ---
 
-<Layout title={title} description={description}>
+<Layout title={frontmatter.title} description={frontmatter.description}>
   <article class="prose mx-auto px-4 py-8">
-    <h1 class="text-3xl font-bold mb-4">{title}</h1>
-    <p class="text-lg mb-6">{description}</p>
-    <Content />
+    <h1 class="text-3xl font-bold mb-4">{frontmatter.title}</h1>
+    <p class="text-lg mb-6">{frontmatter.description}</p>
+    <div innerHTML={rendered.content} />
   </article>
 </Layout>
