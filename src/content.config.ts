@@ -1,23 +1,15 @@
 import { defineCollection, z } from "astro:content";
-import { glob } from "astro/loaders";
 
-const typeSchema = z.object({
+const schema = z.object({
   title: z.string(),
-  code: z.string(),
   description: z.string(),
+  code: z.string().optional(),
 });
 
 export const collections = {
-  types: defineCollection({
-    loader: glob({ pattern: "**/*.md", base: "./src/content/types" }),
-    schema: typeSchema,
-  }),
-  functions: defineCollection({
-    loader: glob({ pattern: "**/*.md", base: "./src/content/functions" }),
-    schema: typeSchema,
-  }),
-  dichotomies: defineCollection({
-    loader: glob({ pattern: "**/*.md", base: "./src/content/dichotomies" }),
-    schema: typeSchema,
-  }),
+  types: defineCollection({ schema }),
+  functions: defineCollection({ schema }),
+  dichotomies: defineCollection({ schema }),
+  database: defineCollection({ schema }),
+  neurosocionics: defineCollection({ schema }), // 👈 ADD THIS
 };
