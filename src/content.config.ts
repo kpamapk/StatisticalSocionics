@@ -14,23 +14,23 @@ const databaseSchema = baseSchema.extend({
 
 export const collections = {
   types: defineCollection({
-    loader: glob("./content/types/**/*.md"),
+    loader: glob({ base: "./src/content/types", pattern: "**/*.md" }),
     schema: baseSchema,
   }),
   functions: defineCollection({
-    loader: glob("./content/functions/**/*.md"),
+    loader: glob({ base: "./src/content/functions", pattern: "**/*.md" }),
     schema: baseSchema,
   }),
   dichotomies: defineCollection({
-    loader: glob("./content/dichotomies/**/*.md"),
+    loader: glob({ base: "./src/content/dichotomies", pattern: "**/*.md" }),
     schema: baseSchema,
   }),
   database: defineCollection({
-    loader: glob("./content/database/**/*.md"),
+    loader: glob({ base: "./src/content/database", pattern: "**/*.md" }),
     schema: databaseSchema,
   }),
   neurosocionics: defineCollection({
-    loader: glob("./content/neurosocionics/**/*.md"),
+    loader: glob({ base: "./src/content/neurosocionics", pattern: "**/*.md" }),
     schema: baseSchema,
   }),
 };
