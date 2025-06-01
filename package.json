@@ -13,9 +13,9 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "astro": "^5.8.1",
-    "@astrojs/rss": "^5.0.1",
-    "@astrojs/sitemap": "^5.0.0",
+    "astro": "^5.5.2",
+    "@astrojs/rss": "^4.0.11",
+    "@astrojs/sitemap": "^3.2.1",
     "@resvg/resvg-js": "^2.6.2",
     "@tailwindcss/vite": "^4.0.14",
     "dayjs": "^1.11.13",
