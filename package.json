@@ -16,7 +16,7 @@
     "astro": "^5.5.2",
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.2.1",
-    "@astrojs/markdown-remark": "^0.4.0",
+    "@astrojs/markdown-remark": "^1.0.1",
     "@resvg/resvg-js": "^2.6.2",
     "@tailwindcss/vite": "^4.0.14",
     "dayjs": "^1.11.13",
