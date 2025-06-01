@@ -1,14 +1,15 @@
 import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
+import markdown from "@astrojs/markdown-remark"; // ✅ NEW
 import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import { SITE } from "./src/config";
 
-// https://astro.build/config
 export default defineConfig({
   site: SITE.website,
   integrations: [
+    markdown(), // ✅ NEW: Required for `astro:markdown-remark` import to work
     sitemap({
       filter: (page) => SITE.showArchives || !page.endsWith("/archives"),
     }),
@@ -26,6 +27,4 @@ export default defineConfig({
       exclude: ["@resvg/resvg-js"],
     },
   },
-  // Removed deprecated 'image.experimentalLayout'
-  // Removed unsupported 'experimental' flags
 });
