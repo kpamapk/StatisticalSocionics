@@ -1,6 +1,6 @@
 import { defineCollection, z } from "astro:content";
+import { glob } from "astro/loaders";
 
-// Define a shared schema for all three collections
 const baseSchema = z.object({
   title: z.string(),
   code: z.string(),
@@ -8,7 +8,16 @@ const baseSchema = z.object({
 });
 
 export const collections = {
-  types: defineCollection({ schema: baseSchema }),
-  functions: defineCollection({ schema: baseSchema }),
-  dichotomies: defineCollection({ schema: baseSchema }),
+  types: defineCollection({
+    loader: glob({ pattern: "**/[^_]*.md", base: "./src/content/types" }),
+    schema: baseSchema,
+  }),
+  functions: defineCollection({
+    loader: glob({ pattern: "**/[^_]*.md", base: "./src/content/functions" }),
+    schema: baseSchema,
+  }),
+  dichotomies: defineCollection({
+    loader: glob({ pattern: "**/[^_]*.md", base: "./src/content/dichotomies" }),
+    schema: baseSchema,
+  }),
 };
