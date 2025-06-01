@@ -1,22 +1,22 @@
-import { defineCollection, z } from "astro:content";
+import { defineCollection, z, reference, image } from "astro:content";
 
+// Base schema
 const baseSchema = z.object({
   title: z.string(),
   description: z.string(),
   code: z.string().optional(),
 });
 
+// Database schema with local image + optional URL
 const databaseSchema = baseSchema.extend({
-  image: z.string().refine((path) => path.startsWith("/reddit-images/"), {
-    message: "Image path must start with /reddit-images/",
-  }),
+  image: image().optional(), // ✅ Local image import (from `/public`)
+  url: z.string().url().optional(), // ✅ External link (optional)
 });
 
 export const collections = {
   types: defineCollection({ schema: baseSchema }),
   functions: defineCollection({ schema: baseSchema }),
   dichotomies: defineCollection({ schema: baseSchema }),
-  database: defineCollection({ schema: databaseSchema }),
   neurosocionics: defineCollection({ schema: baseSchema }),
+  database: defineCollection({ schema: databaseSchema }), // ✅ Enhanced schema
 };
-
