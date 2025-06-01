@@ -1,11 +1,20 @@
 ---
-import Layout from "@/layouts/Layout.astro";
+// Import types
 import { getEntry, render } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
 
+// Get the slug param
 const { slug } = Astro.params;
-const entry = await getEntry("types", slug);
-if (!entry) throw new Error(`Type not found: ${slug}`);
 
+// Do not assert type here
+const entry = await getEntry("types", slug);
+
+// Handle 404
+if (!entry) {
+  throw new Error(`Entry not found: ${slug}`);
+}
+
+// Safe to access after null check
 const { Content } = await render(entry);
 const { title, description } = entry.data;
 ---
