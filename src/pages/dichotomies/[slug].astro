@@ -1,10 +1,11 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import { getEntry, render } from "astro:content";
+import { collections } from "@/content.config.ts";
 
 const { slug } = Astro.params;
-const entry = await getEntry("dichotomies", slug);
-if (!entry) throw new Error(`Type not found: ${slug}`);
+const entry = await getEntry<typeof collections>("dichotomies", slug);
+if (!entry) throw new Error(`Dichotomy not found: ${slug}`);
 
 const { Content } = await render(entry);
 const { title, description } = entry.data;
