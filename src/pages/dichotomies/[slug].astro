@@ -1,16 +1,20 @@
 ---
 // Import types
-import { getEntry, render, type CollectionEntry } from "astro:content";
+import { getEntry, render } from "astro:content";
 import Layout from "@/layouts/Layout.astro";
 
-// Infer the collection name properly
+// Get the slug param
 const { slug } = Astro.params;
 
-// Explicitly tell getEntry what collection you're querying
-const entry = await getEntry("dichotomies", slug) as CollectionEntry<"dichotomies">;
+// Do not assert type here
+const entry = await getEntry("dichotomies", slug);
 
-if (!entry) throw new Error(`Entry not found: ${slug}`);
+// Handle 404
+if (!entry) {
+  throw new Error(`Entry not found: ${slug}`);
+}
 
+// Safe to access after null check
 const { Content } = await render(entry);
 const { title, description } = entry.data;
 ---
